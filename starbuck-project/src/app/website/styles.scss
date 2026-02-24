@@ -1,0 +1,91 @@
+$primary-color: #006241;
+$light-color: #f3f3f3;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: $light-color;
+}
+
+.navbar {
+  background: $primary-color;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    li {
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.hero {
+  background: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    background: white;
+    color: $primary-color;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+
+    &:hover {
+      background: #ddd;
+    }
+  }
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+
+  .card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    text-align: center;
+
+    button {
+      margin-top: 10px;
+      padding: 8px 20px;
+      background: $primary-color;
+      color: white;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
