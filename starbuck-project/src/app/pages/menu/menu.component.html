@@ -1,0 +1,7 @@
+<section class="products">
+  <div class="card" *ngFor="let item of drinks">
+    <h3>{{ item.name }}</h3>
+    <p>{{ item.description }}</p>
+    <button (click)="buy(item.name)">Buy</button>
+  </div>
+</section>

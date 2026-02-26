@@ -1,0 +1,23 @@
+.hero {
+  background: #006241;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    background: white;
+    color: #006241;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
